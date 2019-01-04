@@ -4,7 +4,8 @@ resource "aws_s3_bucket" "main" {
 
   tags   = "${local.s3_tags}"
   region = "${var.s3_region}"
-  lifecycle{
+
+  lifecycle {
     prevent_destroy = "true"
   }
 }
