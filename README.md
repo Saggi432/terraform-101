@@ -4,6 +4,10 @@ Sample Terraform with AWS configuration
 
 All the Credentials of the AWS with region configuration are stored as env variables.
 
+VALIDATE
+PLAN
+APPLY
+
 
 Quick Notes
 
