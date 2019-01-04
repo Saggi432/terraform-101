@@ -57,7 +57,3 @@ Dont store them locally, use some S3 or some other storage mechanism like etcd, 
 Make sure you enable versioning, encryption.
 
 
-Building a Multi Tier Network Layer:
-=======================================
-
-Refer to the network picture/diagram
