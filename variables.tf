@@ -1,18 +1,18 @@
-variable "s3_bucket_name" {
-  default = "my-432-tf-test-bucket"
-  description = "This is my default bucket name"
-  type = "string"
+variable "s3_bucket_prefix" {
+  #default = "my-432-tf-test-bucket"
+  description = "This is my default prefix for bucket name"
+  type        = "string"
 }
 
 variable "environment" {
-  default = "test"
+  default     = "test"
   description = "Holds the environment_variable"
-  type = "string"
+  type        = "string"
 }
 
-locals{
+locals {
   s3_tags = {
-    created_by = "terraform"
+    created_by  = "terraform"
     environment = "${var.environment}"
   }
 }
@@ -25,9 +25,7 @@ locals{
   }
 }*/
 
-
-
-variable "s3_regions" {
-  type = "list"
-  default = ["us-east-1"]
+variable "s3_region" {
+  type    = "string"
+  default = "holds the region information"
 }
