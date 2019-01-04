@@ -5,6 +5,18 @@ resource "aws_s3_bucket" "main" {
   tags   = "${local.s3_tags}"
   region = "${var.s3_region}"
 
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        sse_algorithm = "AES256"
+      }
+    }
+  }
+
+  versioning {
+    enabled = "true"
+  }
+
   lifecycle {
     prevent_destroy = "true"
   }
