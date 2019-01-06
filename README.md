@@ -32,6 +32,8 @@ terraform validate
 
 terraform apply -auto-approve
 
+git clean -fdx
+
 Delete the resource
 ========================
 
